@@ -9,7 +9,7 @@
 body {
   background-color: var(--gin);
   font-family:'Corinthia', cursive;
-   padding:20px; 
+  padding:20px; 
 }
 h1{
   text-align: justify;
@@ -39,4 +39,29 @@ textarea{
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 12px;
+}
+
+/*Adding my image and text stlying */
+#image {
+  width: 250px;
+  padding: 20px;
+  text-align: center;
+}
+
+#image {
+  margin: 0 0 20px 0;
+  font-size: 1.75em;
+}
+
+#image p {
+  margin: 20px 0 0 0;
+  font-size: .9em;
+}
+
+/*Adding my theme classes to adjust styling with different options */
+.white {
+  background: url(assets2/ChristmasWhite.jpg); 
+  border: 3px solid #758918;
+  font-family:'Corinthia', cursive;
+  font-size: 1.4rem;
 }
