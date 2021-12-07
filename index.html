@@ -8,17 +8,32 @@
     <!-- import css: -->
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <title>Your App</title>
+    <title>Holiday Cheer!</title>
 </head>
 
 <body>
-    <input id="name-input">
-    <p>
-        The name of the band is
-        <span id="band-name"></span>
-    </p>
+    <h1>Personalize Your Card</h1>
+    <div id="container">
+        <section id="inputs">
+            <label for="name-input">Name</label>
+            <input id="name-display" value="name">
 
-    <script src="app.js" type="module"></script>
+            <label for="image-select">Image</label>
+            <select id="image-select">
+                <option value="assets2/blueTree.jpg">Blue Tree</option>
+                <option value="assets2/ChristmasBlue.jpg" selected>Blue Christmas Theme</option>
+                <option value="assets2/ChristmasGold.jpg">Gold theme</option>
+                <option value="assets2/ChristmasRed.png">Red Theme</option>
+                <option value="assets2/ChristmasTreats.jpg">Treats</option>
+                <option value="assets2/ChristmasWhite.jpg">White Theme</option>
+                <option value="assets2/decorations.jpg">Decorations</option>
+                <option value="assets2/gifts.jpg">Gifts</option>
+                <option value="assets2/ornaments.png">Ornaments</option>
+                <option value="assets2/reindeer.jpg">Reindeer</option>
+                <option value="assets2/snowflake.jpg">Snowflake</option>
+                <option value="assets2/snowman.jpg">Snowman</option>
+            </select>
+            <script src="app.js" type="module"></script>
 </body>
 
 </html>

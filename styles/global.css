@@ -1,11 +1,21 @@
 /* font @import */
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Corinthia:wght@700&display=swap');
 :root {
   /* css variables with theme colors,
     names have to start with "--" */
-  --color-1: #b9af9e;
+  --gin:#DBEAE3; 
 }
 
 body {
+  background-color: var(--gin);
+  font-family: 'Corinthia', cursive;
    padding:20px; 
+}
+
+section{
+  width: 500px;
+  height: 300px;
+  border: 1px dotted pink;
+  background:url(https://media.istockphoto.com/photos/christmas-or-winter-composition-snowflakes-and-red-berries-on-gray-picture-id1285648942);
+  background-size: cover; 
 }
