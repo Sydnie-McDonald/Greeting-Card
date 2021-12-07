@@ -10,6 +10,7 @@ nameInput.addEventListener('input', () => {
 const avatarSelect = document.getElementById('avatar-select');
 const avatarImage = document.getElementById('avatar-image');
 avatarSelect.addEventListener('change', () => {
+  // images have an SRC property
   avatarImage.src = avatarSelect.value;
 });
 
