@@ -15,11 +15,11 @@
     <h1>Personalize Your Card</h1>
     <div id="container">
         <section id="inputs">
-            <label for="name-input">Name</label>
-            <input id="name-display" value="name">
-
+            <label for="name-display">Name</label>
+            <input id="name-input" value="name">
             <label for="image-select">Image</label>
             <select id="image-choice">
+                <option value="blank">Make a selection</option>
                 <option value="assets2/blueTree.jpg">Blue Tree</option>
                 <option value="assets2/ChristmasBlue.jpg" selected>Blue Christmas Theme</option>
                 <option value="assets2/ChristmasGold.jpg">Gold theme</option>
@@ -29,35 +29,27 @@
                 <option value="assets2/decorations.jpg">Decorations</option>
                 <option value="assets2/gifts.jpg">Gifts</option>
                 <option value="assets2/ornaments.png">Ornaments</option>
-                <option value="assets2/reindeer.jpg">Reindeer</option>
+                <option value="assets2/reindeer.png">Reindeer</option>
                 <option value="assets2/snowflake.jpg">Snowflake</option>
                 <option value="assets2/snowman.jpg">Snowman</option>
             </select>
 
             <label for="description-textarea">Description</label>
-            <textarea
-                id="description-textarea">Happy holidays from us to you. Hope you are safe and feeling cheer!</textarea>
+            <input id="description-input"></input>
+        </section>
+    </div>
 
-            <label for="theme-select">Theme</label>
-            <select id="theme-select">
-                <option value="Blue" selected>Deep Sky</option>
-                <option value="Red">Santa Red</option>
-                <option value="Gold">Tinsle Gold</option>
-                <option value="White">Snowy White</option>
-            </select>
+    <div class="example">
+        <article class="example-theme">
+            <h2 id="name-header">Christmas Cheer</h2>
+            <span id="name-display"></span>
+            <img id="image" src="assets2/ChristmasWhite.jpg">
+            <p id="description-display">
+                Christmas is a time for celebration and cheer!
+            </p>
+    </div>
 
-            <article id="image-select" class="white-theme">
-                <h2 id="name-header">Christmas Cheer</h2>
-                <img id="image" src="assets2/ChristmasWhite.jpg">
-                <p id="description-display">
-                    Christmas is a time for celebration and cheer! Family and love along with gifts and food are what
-                    make the holidays special,
-                    but the holidays would not be complete without sending you a Merry Christmas and Happy Holidays from
-                    my family to yours!
-                </p>
-            </article>
-
-            <script src="app.js" type="module"></script>
 </body>
+<script src="app.js" type="module"></script>
 
 </html>

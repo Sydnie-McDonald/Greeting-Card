@@ -4,64 +4,80 @@
   /* css variables with theme colors,
     names have to start with "--" */
   --gin:#DBEAE3; 
-}
-
+} 
 body {
-  background-color: var(--gin);
+  background: var(--gin);
   font-family:'Corinthia', cursive;
   padding:20px; 
 }
-h1{
+@media (min-width: 600px) {
+  #example {
+    grid-template-columns: 50% 50%;
+    align-items: left;
+    grid-gap: 5px;
+  }
+}
+h1 {
   text-align: justify;
   padding-bottom: 10px;
-}
-
+} 
 section{
-  width: 500px;
+  width: 800px;
   height: 300px;
-  border: 1px dotted pink;
+  padding-top: 20px;
+  border: 3px dotted pink;
   background:url(https://media.istockphoto.com/photos/christmas-or-winter-composition-snowflakes-and-red-berries-on-gray-picture-id1285648942);
   background-size: cover; 
-}
-#inputs{
-  padding: 10px 20px;
-}
-#theme-select{
-  text-align: center;
+  align-content: left;
 }
 
-textarea{
-  resize: none;
+#inputs {
+  font-family: 'Caveat', cursive;
   width: 100%;
-  height: 150px;
-  padding: 20px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  font-size: 12px;
+  max-width: 400px;
+}
+label, input, select, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
-/*Adding my image and text stlying */
-#image {
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+textarea {
+  resize: none;
+  height: 60px;
+}
+
+input, select {
+  height: 30px;
+  font-size: 1rem;
+}
+#image{
   width: 250px;
   padding: 20px;
-  text-align: center;
+  text-align: right;
 }
 
-#image {
-  margin: 0 0 20px 0;
-  font-size: 1.75em;
-}
-
-#image p {
-  margin: 20px 0 0 0;
-  font-size: .9em;
-}
-
-/*Adding my theme classes to adjust styling with different options */
+/*Adding my theme classes to adjust styling with different options 
 .white {
-  background: url(assets2/ChristmasWhite.jpg); 
-  border: 3px solid #758918;
-  font-family:'Corinthia', cursive;
-  font-size: 1.4rem;
+  background-image: url(ChristmasWhite.jpg);
 }
+
+.red{
+
+}
+
+.blue{
+
+}
+
+.silver{
+
+}
+
+*/
