@@ -11,12 +11,12 @@ body {
   padding:20px; 
 }
 @media (min-width: 600px) {
-  #example {
+  .example {
     grid-template-columns: 50% 50%;
     align-items: left;
     grid-gap: 5px;
   }
-}
+} 
 h1 {
   text-align: justify;
   padding-bottom: 10px;
@@ -30,7 +30,6 @@ section{
   background-size: cover; 
   align-content: left;
 }
-
 #inputs {
   font-family: 'Caveat', cursive;
   width: 100%;
@@ -57,27 +56,8 @@ input, select {
   height: 30px;
   font-size: 1rem;
 }
-#image{
+#image {
   width: 250px;
+  height: 100%;
   padding: 20px;
-  text-align: right;
 }
-
-/*Adding my theme classes to adjust styling with different options 
-.white {
-  background-image: url(ChristmasWhite.jpg);
-}
-
-.red{
-
-}
-
-.blue{
-
-}
-
-.silver{
-
-}
-
-*/

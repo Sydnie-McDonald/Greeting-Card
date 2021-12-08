@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- import css: -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous" >
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" >
-    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Gwendolyn&family=Lato:ital,wght@1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Concert+One&family=Gwendolyn&family=Lato:ital,wght@1,300;1,400&family=Space+Grotesk:wght@300;400&display=swap"
+        rel="stylesheet" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/demo-global.css">
@@ -16,9 +18,8 @@
 </head>
 
 <body>
-    <h1>Character Builder</h1> 
-
-    <div id="container"> 
+    <h1>Character Builder</h1>
+    <div id="container">
         <section id="inputs">
             <label for="name-input">Name</label>
             <input id="name-input" value="The Know">
@@ -36,9 +37,10 @@
                 <option value="assets/devil.png">Devil</option>
                 <option value="assets/flat-top.png">Flat Top</option>
             </select>
-            
+
             <label for="description-textarea">Description</label>
-            <textarea id="description-textarea">Pries secrets and hidden fears using advanced telepathic techniques. Can also apply compulsion when the subject has a corresponding fear.</textarea>
+            <textarea
+                id="description-textarea">Pries secrets and hidden fears using advanced telepathic techniques. Can also apply compulsion when the subject has a corresponding fear.</textarea>
 
             <label for="theme-select">Theme</label>
             <select id="theme-select">
@@ -55,13 +57,13 @@
             <h2 id="name-header">The Know</h2>
             <img id="avatar-image" src="assets/psychic.png">
             <p id="description-display">
-                Pries secrets and hidden fears using 
+                Pries secrets and hidden fears using
                 advanced telepathic techniques. Can also
                 apply compulsion when the subject has a corresponding
                 fear.
-            </p>        
+            </p>
         </article>
-    </div>  
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/dom-to-image@2.6.0/src/dom-to-image.min.js"></script>
     <script src="demo-app.js" type="module"></script>

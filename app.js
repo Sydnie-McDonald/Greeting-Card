@@ -23,3 +23,13 @@ descriptionInput.addEventListener('input', () => {
 imageChoice.addEventListener('change', () => {
     image.src = imageChoice.value;
 });
+
+//Export
+const exportButton = document.getElementById('export-button');
+exportButton.addEventListener('click', async () => {
+    const dataUrl = await domtoimage.toPng(image);
+    const link = document.createElement('a');
+    link.download = nameInput.value + '.png';
+    link.href = dataUrl;
+    link.click();
+});
